@@ -1,16 +1,46 @@
-# React + Vite
+# MIDID_4J
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite frontend application.
 
-Currently, two official plugins are available:
+## Local development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm ci
+npm run dev
+```
 
-## React Compiler
+## Build
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm run build
+```
 
-## Expanding the ESLint configuration
+Build output is generated in `dist/`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Hosting (GitHub Pages)
+
+This repository is configured to auto-deploy to GitHub Pages from `main` using `.github/workflows/deploy.yml`.
+
+### Deployment flow
+
+- Trigger: push to `main` (or manual workflow dispatch)
+- Install command: `npm ci`
+- Build command: `npm run build`
+- Publish directory: `dist`
+
+### Environment variables
+
+If needed, add these repository secrets in GitHub:
+
+- `VITE_GEMINI_API_KEY`
+- `VITE_OPENROUTER_API_KEY`
+
+### Enable Pages
+
+1. Open repository **Settings → Pages**.
+2. Set **Source** to **GitHub Actions**.
+3. Push to `main` to trigger deployment.
+
+### Custom domain (optional)
+
+In **Settings → Pages**, set a custom domain and enable HTTPS after DNS is configured.

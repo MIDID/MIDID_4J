@@ -100,7 +100,7 @@ const Hero = () => {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-gradient-to-tr from-pink-500/30 via-purple-500/30 to-cyan-500/40 blur-[60px]"></div>
 
                 <img 
-                  src="/assets/profile_final.png" 
+                  src={`${import.meta.env.BASE_URL}assets/profile_final.png`} 
                   alt="Jeswin Jerard — AI Architect Profile" 
                   className="h-full w-auto object-contain object-bottom drop-shadow-[0_0_40px_rgba(6,182,212,0.35)] group-hover:scale-105 transition-transform duration-700"
                 />
@@ -121,7 +121,7 @@ const Hero = () => {
                     }}
                   >
                     <img 
-                      src="/assets/quantum_core_3d.jpg" 
+                      src={`${import.meta.env.BASE_URL}assets/quantum_core_3d.jpg`} 
                       alt=""
                       className="absolute max-w-none w-[448px] h-[580px] object-cover pointer-events-none"
                       style={{
@@ -187,7 +187,7 @@ const Hero = () => {
             <div className="lg:col-span-5 relative group">
               <div className="relative rounded-2xl overflow-hidden border border-cyan-500/30 shadow-2xl">
                 <img 
-                  src="/assets/quantum_core_3d.jpg" 
+                  src={`${import.meta.env.BASE_URL}assets/quantum_core_3d.jpg`} 
                   alt="3D Quantum AI Core Processor" 
                   className="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-700"
                 />

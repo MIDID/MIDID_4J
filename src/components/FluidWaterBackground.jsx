@@ -314,7 +314,7 @@ const FluidWaterBackground = ({ theme = 'dark' }) => {
           theme === 'light' ? 'opacity-15' : 'opacity-35'
         }`}
         style={{
-          backgroundImage: "url('/assets/ocean_abyss.jpg')",
+          backgroundImage: `url('${import.meta.env.BASE_URL}assets/ocean_abyss.jpg')`,
           filter: theme === 'light' ? 'saturate(1.2) brightness(1.1)' : 'brightness(0.65) contrast(1.2)'
         }}
       />
@@ -323,7 +323,7 @@ const FluidWaterBackground = ({ theme = 'dark' }) => {
       <div 
         className="absolute inset-0 bg-cover bg-top mix-blend-screen opacity-20 transition-opacity duration-700 pointer-events-none"
         style={{
-          backgroundImage: "url('/assets/ocean_caustics.jpg')",
+          backgroundImage: `url('${import.meta.env.BASE_URL}assets/ocean_caustics.jpg')`,
           animation: 'pulse 8s ease-in-out infinite alternate'
         }}
       />

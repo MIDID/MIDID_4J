@@ -196,7 +196,7 @@ const CvBookModal = ({ isOpen, onClose }) => {
                           <div className="flex items-center gap-4 pb-4 border-b-2 border-slate-800">
                             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden border-2 border-cyan-800 shadow-md flex-shrink-0 bg-slate-900">
                               <img 
-                                src="/assets/profile_final.png" 
+                                src={`${import.meta.env.BASE_URL}assets/profile_final.png`} 
                                 alt="Jeswin Jerard" 
                                 className="w-full h-full object-cover object-top"
                               />

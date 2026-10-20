@@ -56,7 +56,7 @@ const OceanLoadingScreen = ({ onComplete }) => {
           {/* Background Ocean Depth Ambience */}
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-luminosity scale-110 animate-pulse duration-1000"
-            style={{ backgroundImage: "url('/assets/ocean_abyss.jpg')" }}
+            style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/ocean_abyss.jpg')` }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#02050e] via-[#050e24]/70 to-[#02050e]" />
 
